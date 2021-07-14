@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+/* -----------Body------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+/* --------Top Container-------- */
+.top-container{
+    display: flex;
+    background-color:#2D25A0 ;
+    width: 100%;
+    height: 591px;
+    justify-content: space-evenly;
+    padding-top: 67px;
+    color: white;
+}
+
+.top-details h1{
+    font-size: 64px;
+}
+.top-details a{
+    padding: 10px 24px;
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+}
+
+.top-banner img{
+    position: relative;
+width: 556.01px;
+height: 438px;
+}
+
+.top-container:hover .fa-futbol{
+    animation: rotate 2s linear;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    100%{
+        transform: rotateZ(360deg);   
+    }
+}
+        /* --------------------------------------
+          Media query for top container (Mobile)
+        --------------------------------------  */
+
+
+@media(max-width: 786px){
+    .top-container{
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .top-details {
+        width: 90%;
+        /* margin: 2%; */
+        /* padding: 0 5px; */
+    }
+    .top-details h1{
+        font-size: 30px;
+        padding-left: 50px
+    }
+    .top-details a{
+        margin-left: 50px;
+    }
+    .top-banner img{
+        margin-top: 50px;
+        width: 90%;
+    }
+
+}
+
+
+            /* -----------------------------------
+            Media query for top container (ipad)
+            ----------------------------------  */
+
+
+@media only screen and (min-width: 786px) and (max-width:992px){
+    .top-container{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .top-details{
+        width: 90%;
+        margin: 4%;
+        padding: 0 5px;
+    }
+    .top-details h1{
+        font-size: 40px;
+    }
+    .top-banner{
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-top: 70px;
+    margin-left: 380px;
+    margin-right: 380px;
+}
+.player{
+    padding: 15px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin-bottom: 0;
+}
+
+.player img{
+    width: 300px;
+    height: 256px;
+    border-radius: 8px;
+}
+.player h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    margin: 0;
+}
+.player p{
+    font-size: 16px;
+    color: #6C6C6C;
+    padding-right: 8px;
+}
+                /*---------------------------------------- 
+             Media query for Player details (Mobile)
+            --------------------------------------------- */
+
+@media(max-width: 786px){
+    .players{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 10px 30px 10px;
+        padding-left: 6px;
+    }
+    .player{
+        width: 300px;
+    }
+    .player p{
+        padding-right: 5px;
+    }
+}
+
+                /*-----------------------------------
+                Media query for Player details (ipad)
+                ------------------------------------- */
+
+@media only screen and (min-width: 786px) and (max-width:992px){
+    .players{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 27px;
+        margin: 30px 10px 30px 20px;
+        padding-left: 20px;
+    }
+    .player{
+        width: 300px;
+    }
+    .player p{
+        padding-right: 5px;
+    }
+}
+        /* ----------
+            Trailer
+            -------- */
+    .trailer-container{
+        display: grid;
+        margin-top: 50px;
+        height: 750px;
+
+    }
+    .trailer-title{
+        
+        padding:30px 0 ;
+        text-align: center;
+        font-size: 45px;
+    }
+    .trailer{
+       margin-left: 530px;
+        width: 700px;
+        height: 450px;
+        border-radius:10px;
+    }
+    
+    /* -------------------------------
+    Media query for Trailer (Mobile)
+    ------------------------------- */
+    @media(max-width: 786px){
+        
+        .trailer-title{
+            font-size: 15px;
+            text-align: justify;
+            padding-left: 100px;
+        }
+        .trailer{
+            margin-left: 100px;
+            width:400px ;
+            height: 300px;
+
+        }
+    }
+    /* -------------------------------
+    Media query for Trailer (ipad)
+    ------------------------------- */
+    @media only screen and (min-width: 786px) and (max-width:992px){
+        .trailer-title{
+            font-size: 15px;
+            text-align: justify;
+            padding-left: 10px;
+        }
+        .trailer{
+            width:600px ;
+            height: 400px;
+
+        }
+    }
+
+            /* ----
+            support
+            ---- */
+    .support{
+        color: white;
+        background-color: #2D25A0;
+        padding-bottom: 20px;
+    }
+    .support-title{
+        text-align: center;
+        color:goldenrod
+    }
+    .selection{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .selection button{
+        background-color: orange;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    
+
+         /* -----------
+              Footer
+            ----------- */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.fab{
+    background-color: #d1d7eb;
+    margin: 20px 3px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.copyright{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 60px;
+}
+
+/* -------------------------- 
+ Media query for footer(Mobile)
+----------------------------- */
+
+@media (max-width: 786px){
+    footer{
+        width:90%;
+        margin: 0;
+    }
+    footer img{
+        width: 200px;
+        margin-top: 20px;
+    }
+    .fab{
+        padding: 5px;
+        margin: 10px 5px;
+    }
+    footer p{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 100px;
+    }
+}
+
+/* ---------------------------- 
+   Media query for footer (ipad)
+------------------------------ */
+
+@media only screen and (min-width: 786px) and (max-width:992px){
+    footer{
+        width:100%;
+        margin: 0;
+    }
+    footer p{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 100px;
+    }
+}
